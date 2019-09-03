@@ -1,6 +1,8 @@
 import sys
 import logging
 from abc import ABCMeta, abstractmethod
+from urllib.robotparser import RobotFileParser
+
 from six import with_metaclass
 
 from scrapy.utils.python import to_unicode
@@ -53,7 +55,6 @@ class RobotParser(with_metaclass(ABCMeta)):
 
 class PythonRobotParser(RobotParser):
     def __init__(self, robotstxt_body, spider):
-        from six.moves.urllib_robotparser import RobotFileParser
         self.spider = spider
         robotstxt_body = decode_robotstxt(robotstxt_body, spider, to_native_str_type=True)
         self.rp = RobotFileParser()

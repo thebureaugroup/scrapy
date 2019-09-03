@@ -4,7 +4,7 @@ import time
 from tempfile import mkdtemp
 from shutil import rmtree
 from unittest import mock
-from six.moves.urllib.parse import urlparse
+from urllib.parse import urlparse
 from six import BytesIO
 
 from twisted.trial import unittest

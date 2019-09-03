@@ -5,7 +5,7 @@ scrapy.http.Request objects
 
 import hashlib
 import weakref
-from six.moves.urllib.parse import urlunparse
+from urllib.parse import urlunparse
 
 from w3lib.http import basic_auth_header
 from scrapy.utils.python import to_bytes, to_unicode

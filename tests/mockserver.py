@@ -1,5 +1,5 @@
 import sys, time, random, os, json
-from six.moves.urllib.parse import urlencode
+from urllib.parse import urlencode
 from subprocess import Popen, PIPE
 
 from OpenSSL import SSL

@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from io import BytesIO
 from datetime import datetime
-from six.moves import cPickle as pickle
+import pickle
 
 import lxml.etree
 import six

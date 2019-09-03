@@ -4,11 +4,10 @@ Item Exporters are used to export/serialize items into different formats.
 
 import csv
 import io
-import sys
+import pickle
 import pprint
 import marshal
 import six
-from six.moves import cPickle as pickle
 from xml.sax.saxutils import XMLGenerator
 
 from scrapy.utils.serialize import ScrapyJSONEncoder

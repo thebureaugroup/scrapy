@@ -11,7 +11,7 @@ module with the ``runserver`` argument::
 """
 
 import sys, os, re
-from six.moves.urllib.parse import urlparse
+from urllib.parse import urlparse
 
 from twisted.internet import reactor, defer
 from twisted.web import server, static, util

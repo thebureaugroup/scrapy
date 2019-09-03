@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from six.moves.urllib.parse import urlparse
+from urllib.parse import urlparse
 
 from scrapy.http import Response, Request
 from scrapy.spiders import Spider

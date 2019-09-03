@@ -2,7 +2,7 @@
 import unittest
 
 import six
-from six.moves.urllib.parse import urlparse
+from urllib.parse import urlparse
 
 from scrapy.spiders import Spider
 from scrapy.utils.url import (url_is_from_any_domain, url_is_from_spider,

@@ -3,15 +3,14 @@ Mail sending helpers
 
 See documentation in docs/topics/email.rst
 """
+from email import encoders as Encoders
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
+from email.mime.nonmultipart import MIMENonMultipart
+from email.mime.text import MIMEText
+from email.utils import COMMASPACE, formatdate
 from io import BytesIO
 import logging
-
-from email.utils import COMMASPACE, formatdate
-from six.moves.email_mime_multipart import MIMEMultipart
-from six.moves.email_mime_text import MIMEText
-from six.moves.email_mime_base import MIMEBase
-from email.mime.nonmultipart import MIMENonMultipart
-from email import encoders as Encoders
 
 from twisted.internet import defer, reactor, ssl
 

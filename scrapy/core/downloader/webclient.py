@@ -1,5 +1,5 @@
 from time import time
-from six.moves.urllib.parse import urlparse, urlunparse, urldefrag
+from urllib.parse import urlunparse, urlparse, urldefrag
 
 from twisted.web.client import HTTPClientFactory
 from twisted.web.http import HTTPClient
