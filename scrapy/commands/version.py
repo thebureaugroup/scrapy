@@ -1,4 +1,3 @@
-from __future__ import print_function
 
 import scrapy
 from scrapy.commands import ScrapyCommand
